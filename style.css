@@ -103,9 +103,6 @@ button:hover {
   background-color: var(--cor-primaria);
   border-right: 2px solid black;
   border-left: 2px solid black;
-  position: relative;
-  z-index: 1;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent);
 }
 .history {
   display: flex;
@@ -445,4 +442,22 @@ footer .ctt,
     object-fit: cover;
     object-position: center;
 
+}
+
+.box {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(to right, rgb(20, 4, 61), transparent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+}
+
+.box p{
+  color: white;
+  font-size: 24px;
+  line-height: 32px;
 }

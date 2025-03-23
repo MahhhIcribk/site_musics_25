@@ -122,7 +122,6 @@ button:hover {
   width: 380px;
   margin-left: 30px;
 }
-
 /*FIM DA APRESENTAÇÂO*/
 #tit1 {
   text-align: center;
@@ -130,7 +129,7 @@ button:hover {
   margin-bottom: 10px;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-.especialidades {
+.redes {
   display: flex;
   width: 100%;
   justify-content: space-around;
@@ -138,10 +137,10 @@ button:hover {
   text-align: center;
   padding: 30px;
 }
-.especialidades h5 {
+.redes h5 {
   color: var(--cor-quartearia);
 }
-.especialidades img {
+.redes img {
   padding: 3px;
   width: 100px;
 }
@@ -159,13 +158,13 @@ button:hover {
   border: 2px solid var(--cor-quartearia);
   box-shadow: 7px 7px 0px -4px rgba(0, 0, 0, 0.75);
 }
-/*FIM DAS ESPECIALIDADES*/
-.cardapio {
+/*FIM DAS REDES*/
+.musics {
   padding: 30px;
   text-align: center;
   margin-top: 30px;
 }
-.cardapio h1 {
+.musics h1 {
   color: var(--cor-secundaria);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
@@ -177,10 +176,20 @@ button:hover {
   margin-top: 10px;
   height: 150px;
 }
-.produtos {
+.musicas {
   border: none;
 }
 /*FIM DO CARDAPIO*/
+.link-escondido {
+  opacity: 0;
+  transform: translateY(5px); /* Move o link para baixo */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.card:hover .link-escondido {
+  opacity: 1;
+  transform: translateY(0); /* Retorna o link à posição original */
+}
+/*FIM DO LINK ESCONDIDO*/
 .depo {
   color: var(--cor-secundaria);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -230,40 +239,6 @@ button:hover {
   border: 1px solid var(--cor-quartearia);
 }
 /*FIM DO CARROSSEL */
-.cdt {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.cadastro {
-  width: 70%;
-  margin-bottom: 50px;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  gap: 10px;
-  text-align: center;
-  background-color: var(--cor-tercearia);
-  border: 2px solid black;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 7px 7px 0px -4px rgba(0, 0, 0, 0.75);
-}
-.tit h2 {
-  color: var(--cor-secundaria);
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-.cadastro input {
-  width: 50%;
-}
-.cadastro button {
-  width: 50%;
-  background-color: var(--cor-primaria);
-}
-.cadastro button:hover {
-  background-color: var(--cor-secundaria);
-}
-/*Fim do Cadastro*/
 footer {
   width: 100%;
   background-color: var(--cor-secundaria);
@@ -296,9 +271,19 @@ footer p {
   text-align: center;
 }
 footer .ctt,
-.end,
-.hf {
+footer .end {
   max-width: 300px;
+}
+/* Novas regras para as imagens clicáveis */
+footer .ctt img,
+footer .end img {
+  width: 40px; /* Tamanho da imagem */
+  height: 40px;
+  transition: transform 0.3s; /* Efeito de transição */
+}
+footer .ctt img:hover,
+footer .end img:hover {
+  transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
 }
 @media screen and (max-width: 780px) {
   header button {

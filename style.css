@@ -37,60 +37,56 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+
 header h2 {
   color: var(--cor-secundaria);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+
 header span {
   color: black;
   font-style: bold;
   text-shadow: none;
 }
-/* REMOVA OU COMENTE ESSAS REGRAS */
-/*
-header button {
-  background-color: var(--cor-secundaria);
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-  letter-spacing: 0.08em;
-  padding: 10px;
-  box-shadow: 5px 5px 0px #000;
-}
-button:hover {
-  background-color: var(--cor-tercearia);
-}
-*/
+
 #navBar {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: auto; /* Empurra o navBar para a esquerda */
+  margin-right: auto;
 }
+
 .navbar-menu {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
   margin: 0;
-  gap: 10px;
+  gap: 20px;
 }
+
 .navbar-link {
   text-decoration: none;
   color: #000;
   transition: 0.3s;
+  font-size: 16px;
+  font-weight: bold;
 }
+
 .navbar-link:hover {
   color: var(--cor-secundaria);
 }
+
 .burger {
   display: none;
   font-size: 30px;
   cursor: pointer;
 }
+
 .login-button {
   display: none;
 }
+
 .burger {
   display: none;
 }
@@ -254,7 +250,7 @@ button:hover {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .aval p {
-  color: var(--cor-quartearia);
+  color: #f1f1f1;
   font-size: 15px;
 }
 .aval img {
@@ -293,7 +289,7 @@ footer h5 {
   color: white;
   text-align: center;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  margin-bottom: 10px; /* Espaçamento abaixo dos títulos */
+  margin-bottom: 1px; /* Espaçamento abaixo dos títulos */
 }
 footer p {
   color: white;
@@ -314,7 +310,7 @@ footer .end img {
 }
 footer .ctt img:hover,
 footer .end img:hover {
-  transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+  transform: scale(2.2); /* Aumenta a imagem ao passar o mouse */
 }
 @media screen and (max-width: 780px) {
   header button {

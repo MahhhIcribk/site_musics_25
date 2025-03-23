@@ -428,36 +428,3 @@ footer .ctt,
     align-items: center;
   }
 }
-
-.bg_section{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 0;
-}
-
-.bg_section video{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-
-}
-
-.box {
-  width: 50%;
-  height: 100%;
-  position: relative;
-  z-index: 1;
-  background: linear-gradient(to right, rgb(20, 4, 61), transparent);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2%;
-}
-
-.box p{
-  color: white;
-  font-size: 24px;
-  line-height: 32px;
-}

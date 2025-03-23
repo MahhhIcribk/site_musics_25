@@ -7,12 +7,11 @@
 }
 
 :root {
-  --cor-primaria: #ffecdb;
-  --cor-secundaria: #eb4a12;
-  --cor-tercearia: #f59f1f;
+  --cor-primaria: #b1b3ff;
+  --cor-secundaria: #4140a7;
+  --cor-tercearia: #5869a8;
   --cor-quartearia: #000000;
 }
-
 body,
 html {
   display: flex;
@@ -20,7 +19,7 @@ html {
   align-items: center;
   scroll-behavior: smooth;
   justify-content: center;
-  background: #ffecdb;
+  background: #262555;
   border: 2px solid black;
 }
 
@@ -134,9 +133,10 @@ button:hover {
   gap: 10px;
   text-align: center;
   padding: 30px;
+  color: white;
 }
 .redes h5 {
-  color: var(--cor-quartearia);
+  color: white;
 }
 .redes img {
   padding: 3px;
@@ -165,7 +165,7 @@ button:hover {
 .spe2:hover .destaque-link a,
 .spe3:hover .destaque-link a,
 .spe4:hover .destaque-link a {
-  color: #ff6f61; /* Muda a cor ao passar o mouse (exemplo: vermelho) */
+  color: #000000; /* Muda a cor ao passar o mouse (exemplo: vermelho) */
   transform: scale(1.1); /* Aumenta ligeiramente o tamanho */
 }
 /*FIM DAS REDES*/
@@ -193,15 +193,16 @@ button:hover {
   opacity: 0;
   transform: translateY(5px); /* Move o link para baixo */
   transition: opacity 0.3s ease, transform 0.3s ease;
-  color: inherit; /* Mantém a cor original do texto */
+}
+.link-escondido a {
+  color: inherit; /* Herda a cor do texto pai */
   text-decoration: none; /* Remove o sublinhado */
 }
 .card:hover .link-escondido {
   opacity: 1;
   transform: translateY(0); /* Retorna o link à posição original */
-  color: #0c0074; /* Muda a cor ao passar o mouse */
 }
-/*FIM DO CARDAPIO*/
+/*FIM DAS MUSICAS*/
 .depo {
   padding: 30px;
   text-align: center;
@@ -212,7 +213,6 @@ button:hover {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .depo p {
-  color: var(--cor-primaria);
   max-width: 800px;
   margin: 0 auto;
   font-size: 1.1em;
@@ -250,7 +250,7 @@ button:hover {
   background-color: var(--cor-tercearia);
 }
 .aval h4 {
-  color: var(--cor-secundaria);
+  color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .aval p {
@@ -274,7 +274,7 @@ footer {
   box-sizing: border-box; /* Garante que o padding não aumente o tamanho total */
 }
 footer h2 {
-  color: var(--cor-primaria);
+  color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   margin-bottom: 10px; /* Espaçamento abaixo do título */
 }
@@ -287,17 +287,16 @@ footer .pt1 {
 footer .pt2 {
   text-align: center;
   color: var(--cor-primaria);
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   margin-top: 20px; /* Espaçamento acima do rodapé */
 }
 footer h5 {
-  color: var(--cor-primaria);
+  color: white;
   text-align: center;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   margin-bottom: 10px; /* Espaçamento abaixo dos títulos */
 }
 footer p {
-  color: var(--cor-quartearia);
+  color: white;
   max-width: 300px;
   text-align: center;
   margin: 0; /* Remove margens padrão dos parágrafos */

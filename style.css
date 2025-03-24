@@ -440,3 +440,83 @@ footer .end img:hover {
     align-items: center;
   }
 }
+/* Botão de Acessibilidade */
+.accessibility-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--cor-secundaria);
+  color: white;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.accessibility-button i {
+  font-size: 24px;
+}
+
+/* Menu de Acessibilidade */
+.accessibility-menu {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background-color: var(--cor-primaria);
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.accessibility-menu button {
+  background-color: var(--cor-secundaria);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.accessibility-menu button:hover {
+  background-color: var(--cor-tercearia);
+}
+/* Modo de Alto Contraste */
+.high-contrast {
+  background-color: black !important;
+  color: white !important;
+}
+
+.high-contrast header,
+.high-contrast footer,
+.high-contrast .history,
+.high-contrast .redes,
+.high-contrast .musics,
+.high-contrast .carrossel {
+  background-color: black !important;
+  color: white !important;
+  border-color: white !important;
+}
+
+.high-contrast .navbar-link,
+.high-contrast .destaque-link a,
+.high-contrast .link-escondido a {
+  color: white !important;
+}
+
+.high-contrast .aval {
+  background-color: black !important;
+  color: white !important;
+  border-color: white !important;
+}

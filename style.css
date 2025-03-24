@@ -292,7 +292,7 @@ header span {
 
 .aval p {
   color: #f1f1f1;
-  font-size: 15px;
+  font-size: 15;
 }
 
 .aval img {
@@ -582,14 +582,22 @@ footer .end img:hover {
   color: white !important;
 }
 
-.container,
-.high-contrast header span,
-.high-contrast header,
-.high-contrast footer,
-.high-contrast .history,
-.high-contrast .redes,
-.high-contrast .musics,
-.high-contrast .carrossel {
+body.high-contrast .depo h1,
+body.high-contrast header h2,
+body.high-contrast .history h1,
+body.high-contrast .redes h5,
+body.high-contrast .musics h1 {
+  color: lightblue;
+}
+
+body.high-contrast .container,
+body.high-contrast header span,
+body.high-contrast header,
+body.high-contrast footer,
+body.high-contrast .history,
+body.high-contrast .redes,
+body.high-contrast .musics,
+body.high-contrast .carrossel {
   background-color: black !important;
   color: white !important;
   border-color: white !important;
